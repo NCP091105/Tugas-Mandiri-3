@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Kegiatan Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <h1 class="logo">Portal Mahasiswa</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#kegiatan">Kegiatan</a></li>
+                    <li><a href="#jadwal">Jadwal</a></li>
+                    <li><a href="#pendaftaran">Daftar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <h2>Selamat Datang di Portal Kegiatan Mahasiswa</h2>
+            <p>Wadah informasi, pendaftaran, dan dokumentasi seluruh aktivitas kemahasiswaan kampus.</p>
+        </section>
+
+        <!-- Card Section -->
+        <section id="kegiatan" class="kegiatan-section">
+            <h2>Kegiatan Mendatang</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Seminar Teknologi</h3>
+                    <p>Inovasi AI dan kecerdasan buatan dalam dunia industri modern.</p>
+                </article>
+                <article class="card">
+                    <h3>Lomba Debat Nasional</h3>
+                    <p>Ajang berfikir kritis dan menyampaikan aspirasi tingkat nasional.</p>
+                </article>
+                <article class="card">
+                    <h3>Pentas Seni Kampus</h3>
+                    <p>Malam ekspresi seni, musik, dan budaya seluruh organisasi mahasiswa.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Table Section -->
+        <section id="jadwal" class="jadwal-section">
+            <h2>Jadwal Agenda</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Kegiatan</th>
+                            <th>Tanggal</th>
+                            <th>Lokasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Seminar Teknologi</td>
+                            <td>12 November 2026</td>
+                            <td>Auditorium Utama</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Lomba Debat Nasional</td>
+                            <td>20 November 2026</td>
+                            <td>Gedung Rektorat Lt. 3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pentas Seni Kampus</td>
+                            <td>05 Desember 2026</td>
+                            <td>Lapangan Olahraga</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="pendaftaran" class="form-section">
+            <h2>Formulir Pendaftaran</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div class="form-group">
+                    <label for="kegiatan-select">Pilih Kegiatan</label>
+                    <select id="kegiatan-select" name="kegiatan" required>
+                        <option value="">-- Pilih Kegiatan --</option>
+                        <option value="seminar">Seminar Teknologi</option>
+                        <option value="debat">Lomba Debat Nasional</option>
+                        <option value="pensi">Pentas Seni Kampus</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alasan">Alasan Bergabung</label>
+                    <textarea id="alasan" name="alasan" rows="4" placeholder="Tuliskan alasan Anda..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Portal Kegiatan Mahasiswa. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
